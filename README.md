@@ -15,7 +15,7 @@ sudo -i
 然后执行：
 
 ```bash
-wget -O /root/gost.sh https://raw.githubusercontent.com/kjxv/Multi-EasyGost/v2/gost.sh && chmod +x /root/gost.sh && /root/gost.sh
+wget -O /root/gost.sh https://raw.githubusercontent.com/kjxv-1/Multi-EasyGost/v2/gost.sh && chmod +x /root/gost.sh && /root/gost.sh
 ```
 
 如果系统没有 `sudo`，请直接使用 root 账号登录。脚本会以 root 权限安装程序、写入 `/etc/gost` 并管理 systemd 服务。
