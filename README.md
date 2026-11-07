@@ -139,7 +139,7 @@ curl --proxy socks5h://VPS公网IP:20001 --proxy-user '用户名:密码' https:/
 本维护版将与仓库内容相关的地址集中在 `gost.sh` 顶部：
 
 ```bash
-repo_owner="${GOST_REPO_OWNER:-kjxv}"
+repo_owner="${GOST_REPO_OWNER:-kjxv-1}"
 repo_name="${GOST_REPO_NAME:-Multi-EasyGost}"
 repo_ref="${GOST_REPO_REF:-v2}"
 ```
@@ -149,6 +149,8 @@ repo_ref="${GOST_REPO_REF:-v2}"
 ```bash
 GOST_REPO_OWNER=你的用户名 GOST_REPO_NAME=你的仓库名 GOST_REPO_REF=你的分支 /root/gost.sh
 ```
+
+脚本 v1.1.3 修复了迁移后默认账号仍指向旧仓库的问题。已下载旧脚本的用户，请重新执行上方一键部署命令以刷新 `/root/gost.sh`。首次安装中途失败时选择菜单 `1` 重新安装；如果已有需要保留的转发配置，请选择菜单 `2` 更新，不要选择菜单 `1`（会重建配置）。
 
 GOST 二进制本身仍从 [GOST 官方 Release](https://github.com/ginuerzh/gost/releases) 下载；只有在安装时主动选择大陆镜像，才会改用脚本内标明的第三方二进制镜像。
 
